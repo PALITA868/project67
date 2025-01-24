@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Travela - Tourism Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>อำเภอรัตนบุรี</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">หน้าหลัก</a>
+                        <a href="tourist.html" class="nav-item nav-link active">แหล่งท่องเที่ยว</a>
+                        <a href="festival.html" class="nav-item nav-link">เทศกาลการท่องเที่ยว</a>
+                        <a href="people.html" class="nav-item nav-link">บุคคลที่มีชื่อเสียง</a>
+                        <a href="about.html" class="nav-item nav-link">เกี่ยวกับเรา</a>
+                        <a href="contact.html" class="nav-item nav-link">ติดต่อเรา</a>
+                    </div>
+                </div>
+            </nav>
+
+        <!-- Navbar & Hero End -->
+         <!-- Header Start -->
+        <div class="img-fluid" alt="Image">
+            <img src="img2/S__7004165.jpg" class="img-fluid" alt="Image">
+        </div>
+        <!-- Header End -->
+         <!-- Destination Start -->
+         <div class="container-fluid destination py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">รูปภาพของเรา</h5>
+                    <h1 class="mb-0">แหล่งท่องเที่ยว</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px;">ทั้งหมด</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px;">วัดใต้บูรพาราม</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px;">วัดโพธิ์ศรีธาตุ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px;">อ่างเก็บน้ำห้วยแก้ว</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px;">ล่องแพห้วยทับทัน </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-6">
+                                <span class="text-dark" style="width: 150px;">หลวงพ่อใหญ่ วัดเหนือ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img2/t5.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">วัดใต้บูรพาราม</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img2/t5.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/วัดใต้.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">วัดใต้บูรพาราม</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/วัดใต้.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img2/t7.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">วัดใต้บูรพาราม</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img2/t7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img2/ชล6.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">อ่างเก็บน้ำห้วยแก้ว</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img2/ชล6.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ชล9.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">อ่างเก็บน้ำห้วยแก้ว</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ชล9.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                         </div>
+
+                                         <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/n4.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                            
+                                                    <h4 class="text-white mb-2 mt-3">วัดเหนือ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/n4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                         </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/วัดเหนือ.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดเหนือ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/วัดเหนือ.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ธาตุ.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดโพธิ์ศรีธาตุ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ธาตุ.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ธาตุ4.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดโพธิ์ศรีธาตุ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ธาตุ4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ธาตุ7.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดโพธิ์ศรีธาตุ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ธาตุ7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ธาตุ8.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดโพธิ์ศรีธาตุ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ธาตุ8.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ธาตุ9.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">วัดโพธิ์ศรีธาตุ</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ธาตุ9.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ชล7.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">อ่างเก็บน้ำห้วยแก้ว</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ชล7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="destination-img">
+                                                <img class="img-fluid rounded w-100" src="img/ล่องแพ3.jpg" alt="">
+                                                <div class="destination-overlay p-4">
+                                                    <h4 class="text-white mb-2 mt-3">ล่องแพห้วยทับทัน</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/ล่องแพ3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                                <h6 class="mb-0">วัดใต้บูรพาราม ตั้งอยู่เลขที่ 197 หมู่ 1 ถนนศรีนคร ตำบลรัตนบุรี อำเภอรัตนบุรี จังหวัดสุรินทร์ สังกัดคณะสงฆ์มหานิกาย  
+                                    วัดนี้ก่อตั้งโดยชาวคุ้มใต้ ซึ่งตั้งอยู่ในพื้นที่ลุ่มราบของหมู่บ้านรัตนบุรี เนื่องจากการเดินทางไปทำบุญที่วัดเหนือมีระยะทางไกล ชาวบ้านจึงร่วมกันบริจาคที่ดินบริเวณชายหมู่บ้านติดกับลำน้ำห้วยแก้ว เพื่อสร้างวัดสำหรับทำบุญและเป็นที่ยึดเหนี่ยวจิตใจ จึงตั้งชื่อว่า "วัดใต้" ต่อมาเมื่อจดทะเบียนก่อตั้งวัด ได้เปลี่ยนชื่อเป็น "วัดใต้บูรพาราม" เพื่อความไพเราะและสอดคล้องกับลักษณะภูมิประเทศของบ้านรัตนบุรี</h6>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t7.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/วัดใต้.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img/วัดใต้.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t10.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t10.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t8.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t8.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t9.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t9.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t6.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t6.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t4.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/t3.jpg" alt="">
+                                         <div class="search-icon">
+                                                    <a href="img2/t3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                                <h6 class="mb-0">วัดโพธิ์ศรีธาตุ ตั้งอยู่ที่หมู่ 1 ตำบลธาตุ อำเภอรัตนบุรี จังหวัดสุรินทร์ สังกัดคณะสงฆ์มหานิกาย ก่อตั้งขึ้นเมื่อปี พ.ศ. 2322 และได้รับวิสุงคามสีมาเมื่อปี พ.ศ. 2489 
+                                    มรดกวัฒนธรรม
+                                    ภายในวัดมีพระธาตุมณฑป พระธาตุมณฑปนี้เป็นที่ประดิษฐานพระบรมสารีริกธาตุ และเป็นศูนย์รวมจิตใจของชาวบ้านในพื้นที่ 
+                                    มรดกวัฒนธรรม
+                                    ทุกปี วัดโพธิ์ศรีธาตุจะจัดงานประเพณีนมัสการพระบรมสารีริกธาตุ เพื่ออนุรักษ์และสืบสานวัฒนธรรมท้องถิ่น งานนี้มีการประกวดพานบายศรีและกิจกรรมทางวัฒนธรรมอื่น ๆ ที่สะท้อนถึงความศรัทธาและความร่วมมือของชุมชน
+                                    ปัจจุบัน เจ้าอาวาสวัดโพธิ์ศรีธาตุคือ พระครูนิมิตธีราภรณ์ 
+                                    ธรรมะรวมมิตร
+                                    วัดโพธิ์ศรีธาตุเป็นสถานที่สำคัญที่สะท้อนถึงประวัติศาสตร์และวัฒนธรรมของชุมชนในอำเภอรัตนบุรี และเป็นศูนย์กลางของกิจกรรมทางศาสนาและประเพณีที่สืบทอดกันมาอย่างยาวนาน</h6>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ9.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ9.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ8.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ8.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ7.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ4.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ2.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ธาตุ.jpg" alt="">
+                                        <div class="search-icon">
+                                           <a href="img/ธาตุ.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                                <h6 class="mb-0">อ่างเก็บน้ำห้วยแก้ว ตั้งอยู่ที่บ้านผือใหญ่ ตำบลรัตนบุรี อำเภอรัตนบุรี จังหวัดสุรินทร์ เป็นอ่างเก็บน้ำขนาดกลางที่มีบทบาทสำคัญในการกักเก็บน้ำเพื่อการอุปโภค-บริโภคและการเกษตรของชุมชนในพื้นที่ นอกจากประโยชน์ด้านการจัดหาน้ำแล้ว 
+                                    อ่างเก็บน้ำห้วยแก้วยังเป็นแหล่งท่องเที่ยวที่มีทิวทัศน์สวยงาม เหมาะสำหรับการพักผ่อนหย่อนใจ ชมพระอาทิตย์ขึ้นและตกดิน รวมถึงเป็นสถานที่ยอดนิยมสำหรับการออกกำลังกาย เช่น การวิ่ง การปั่นจักรยาน</h6>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ห้วย4.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ห้วย4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล12.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล12.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล1.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล1.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล8.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล8.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล5.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล5.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล4.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img2/ชล6.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img2/ชล6.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล7.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล7.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล11.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล11.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ชล10.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ชล10.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                                <h6 class="mb-0">การล่องแพในลำห้วยทับทัน ณ บ้านหมกเต่า ตำบลเบิด อำเภอรัตนบุรี จังหวัดสุรินทร์ เป็นกิจกรรมท่องเที่ยวที่ได้รับความนิยมอย่างมาก สำหรับนักท่องเที่ยวที่ชอบธรรมชาติ ความสงบและความเรียบง่าย หากใครที่ชอบความสนุกเฮฮาก็สามารถเปิดคาราโอเกะร้องขณะล่องแพได้
+                                     นักท่องเที่ยวสามารถสัมผัสกับธรรมชาติที่สวยงามสองฝั่งลำน้ำ เพลิดเพลินกับการล่องแพ และสนุกสนานกับกิจกรรมต่าง ๆ บนแพ</h6>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ล่องแพ4.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ล่องแพ4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/ล่องแพ3.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/ล่องแพ3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/แพ1.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/แพ1.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/แพ3.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/แพ3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/แพ5.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/แพ5.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/แพ4.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/แพ4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-pane fade show p-0">
+                            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                                <h6 class="mb-0">วัดเหนือ ตั้งอยู่ บ้านรัตนบุรี ถนนศรีนคร ตำบลรัตนบุนบุรีรี อำเภอรัตนบุรี จังหวัดสุรินทร์ เป็นวัดที่มีความสำคัญทางประวัติศาสตร์และวัฒนธรรมของชุมชนในพื้นที่ ภายในวัดมีพระพุทธรูปสำคัญคือ "พระพุทธโคดมมุนี" หรือที่ชาวบ้านเรียกว่า "พระเจ้าใหญ่วัดเหนือ" หรือ "หลวงพ่อใหญ่วิหาร"  
+                                    วัดเหนือเป็นศูนย์กลางของกิจกรรมทางศาสนาและวัฒนธรรมของชุมชน โดยมีการจัดงานประเพณีต่าง ๆ เช่น งานแห่เทียนพรรษา และงานนมัสการพระบรมสารีริกธาตุ ซึ่งเป็นที่เคารพนับถือของชาวบ้านในพื้นที่ นอกจากนี้ วัดเหนือยังมีส่วนร่วมในโครงการกฐินสามัคคีทั่วไทย สมทบ 20,000 วัด ซึ่งเป็นกิจกรรมที่ส่งเสริมความสามัคคีและศรัทธาในพระพุทธศาสนา 
+                                    ธรรมะรวมมิตร วัดเหนือจึงเป็นสถานที่ที่มีความสำคัญทั้งในด้านศาสนา วัฒนธรรม และประวัติศาสตร์ของอำเภอรัตนบุรี จังหวัดสุรินทร์
+                                </h6>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/n1.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/n1.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/วัดเหนือ1.webp" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/วัดเหนือ1.webp" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/วัดเหนือ2.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/วัดเหนือ2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/วัดเหนือ3.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/วัดเหนือ3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/n4.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/n4.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>  
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/n2.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/n2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="destination-img">
+                                        <img class="img-fluid rounded w-100" src="img/n3.jpg" alt="">
+                                        <div class="search-icon">
+                                            <a href="img/n3.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Destination End -->
+       

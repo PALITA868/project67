@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Travela - Tourism Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>อำเภอรัตนบุรี</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">หน้าหลัก</a>
+                        <a href="tourist.html" class="nav-item nav-link">แหล่งท่องเที่ยว</a>
+                        <a href="festival.html" class="nav-item nav-link active">เทศกาลการท่องเที่ยว</a>
+                        <a href="people.html" class="nav-item nav-link">บุคคลที่มีชื่อเสียง</a>
+                        <a href="about.html" class="nav-item nav-link">เกี่ยวกับเรา</a>
+                        <a href="contact.html" class="nav-item nav-link">ติดต่อเรา</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+         <!-- Header Start -->
+        <div class="img-fluid" alt="Image">
+            <img src="img2/S__7004163.jpg" class="img-fluid" alt="Image">
+        </div>
+        <!-- Header End -->
+
+ <!-- Gallery Start -->
+ <div class="container-fluid gallery py-5 my-5">
+    <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+        <h5 class="section-title px-3">รูปภาพของเรา</h5>
+        <h1 class="mb-4">เทศกาลการท่องเที่ยว</h1>     
+    </div>
+    <div class="tab-class text-center">
+        <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+            <li class="nav-item">
+                <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#GalleryTab-1">
+                    <span class="text-dark" style="width: 150px;">ทั้งหมด</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#GalleryTab-2">
+                    <span class="text-dark" style="width: 150px;">งานงิ้วรัตนบุรี</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#GalleryTab-3">
+                    <span class="text-dark" style="width: 150px;">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์ วัดโพธิ์ศรีธาตุ</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#GalleryTab-4">
+                    <span class="text-dark" style="width: 150px;">ประเพณีบุญบั้งไฟประจำปี</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#GalleryTab-5">
+                    <span class="text-dark" style="width: 150px;">ประเพณีลอยกระทง</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว15.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว15.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานงิ้วรัตนบุรี</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว5.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานงิ้วรัตนบุรี</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ7.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานงิ้วรัตนบุรี</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">บุญบั้งไฟ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ5.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">บุญบั้งไฟ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ3.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">บุญบั้งไฟ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">บุญบั้งไฟ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">ประเพณีลอยกระทง</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">ประเพณีลอยกระทง</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย14.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย14.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">ประเพณีลอยกระทง</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย16.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย16.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">ประเพณีลอยกระทง</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย18.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย18.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                <div class="gallery-info">
+                                    <h6 class="text-white text-uppercase mb-2">ประเพณีลอยกระทง</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-2" class="tab-pane fade show p-0">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h6 class="mb-0">งานงิ้วรัตนบุรีเป็นงานประเพณีที่จัดขึ้นประจำปีในอำเภอรัตนบุรี จังหวัดสุรินทร์ โดยมีวัตถุประสงค์เพื่อสืบสานวัฒนธรรมและประเพณีของชุมชน 
+                        ในปี 2567 งานงิ้วรัตนบุรีจัดขึ้นระหว่างวันที่ 20 - 26 พฤศจิกายน 2567 ณ บริเวณสนามหน้าวัดกลาง (ติดคลองถม) อำเภอรัตนบุรี จังหวัดสุรินทร์ งานนี้มีการจัดกิจกรรมต่าง ๆ เช่น การแสดงงิ้ว การอัญเชิญเจ้าพ่อศรีนครเตาท้าวเธอ และการจำหน่ายสินค้าพื้นเมือง ซึ่งเป็นที่นิยมของชาวบ้านและนักท่องเที่ยว
+                    </h6>
+                </div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว3.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว4.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว5.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว6.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว7.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว9.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว10.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว11.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว11.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว12.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว12.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว13.jpg"  class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว13.jpg"  data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว14.jpg"  class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว14.jpg"  data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว15.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว15.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/งิ้ว16.jpg"class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/งิ้ว16.jpg"data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-3" class="tab-pane fade show p-0">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h6 class="mb-0">งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์ วัดบ้านธาตุ รัตนบุรี เป็นประเพณีสำคัญที่จัดขึ้นทุกปี เพื่อสักการะพระบรมสารีริกธาตุและพระพุทธบาทจำลอง ภายในงานมีการประกวดพานบายศรีสู่ขวัญ 
+                        ซึ่งเป็นภูมิปัญญาชาวบ้านที่มีชื่อเสียง และสามารถสร้างรายได้ให้ชุมชนจากการรับจ้างประดิษฐ์พานบายศรีในงานบุญต่าง ๆ งานนมัสการพระธาตุเจดีย์ศรีมหาโพธิ์ วัดบ้านธาตุ รัตนบุรี เป็นงานบุญประเพณีที่มีความสำคัญและเป็นที่นิยมของชาวรัตนบุรีและนักท่องเที่ยวที่มาร่วมงานทุกปี
+                    </h6>
+                </div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ4.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ7.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ธาตุ8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ธาตุ8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/18.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/18.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t17.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t17.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t16.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t16.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t15.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="cimg/t15.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t14.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t14.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t13.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t13.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t12.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t12.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/t11.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/t11.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-4" class="tab-pane fade show p-0">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h6 class="mb-0">ประเพณีบุญบั้งไฟของอำเภอรัตนบุรี จังหวัดสุรินทร์ เป็นงานบุญที่จัดขึ้นทุกปี เพื่อบวงสรวงพระศรีนครเตาท้าวเธอ ซึ่งเป็นเทพเจ้าที่ชาวรัตนบุรีนับถือ งานนี้มีการจัดขบวนแห่บั้งไฟจากตำบลต่างๆในอำเภอ 
+                        พร้อมการแสดงฟ้อนรำและกิจกรรมทางวัฒนธรรมอื่นๆ เพื่อสืบสานประเพณีและเสริมสร้างความสามัคคีในชุมชน ในปี พ.ศ. 2567 งานประเพณีบุญบั้งไฟบวงสรวงพระศรีนครเตาท้าวเธอ ได้จัดขึ้นระหว่างวันที่ 9-12 พฤษภาคม 2567 โดยมีขบวนแห่บั้งไฟจาก 12 ตำบลและ 1 เทศบาล ซึ่งแต่ละขบวนมีการตกแต่งอย่างสวยงามและยิ่งใหญ่ 
+                        นอกจากนี้ ยังมีการแสดงฟ้อนรำและกิจกรรมวัฒนธรรมอื่นๆที่น่าสนใจ 
+                        งานประเพณีบุญบั้งไฟรัตนบุรี เป็นงานที่ชาวรัตนบุรีภาคภูมิใจและร่วมมือกันจัดขึ้นทุกปี เพื่อสืบสานวัฒนธรรมและเสริมสร้างความสามัคคีในชุมชน
+                    </h6>
+                </div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ3.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ4.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ5.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ6.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ7.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src=" img/ไฟ8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/ไฟ9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ไฟ9.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-5" class="tab-pane fade show p-0">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h6 class="mb-0">งานลอยกระทงรัตนบุรีเป็นประเพณีที่จัดขึ้นทุกปี ณ อ่างเก็บน้ำห้วยแก้ว วัดสว่างบ้านผือ ตำบลรัตนบุรี อำเภอรัตนบุรี ในปี 2567 งานลอยกระทงรัตนบุรีจัดขึ้นระหว่างวันที่ 13–15 พฤศจิกายน 2567 ภายในงานมีการแสดงของหมอลำชื่อดัง 
+                        การประกวดนางนพมาศ การประกวดกระทงใหญ่ และการจุดพลุบั้งไฟพญานาคจำลอง ซึ่งเป็นหนึ่งเดียวในอีสานใต้ งานลอยกระทงรัตนบุรีเป็นงานประเพณีที่ยิ่งใหญ่และมีความสำคัญของชาวรัตนบุรี ที่จัดขึ้นเพื่อสืบสานวัฒนธรรมและสร้างความสามัคคีในชุมชน
+                    </h6>
+                </div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย1.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย3.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย4.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย5.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย6.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย7.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย8.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย9.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย17.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย17.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย10.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย11.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย11.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย12.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย12.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย13.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย13.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย14.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย14.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย15.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย15.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย16.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย16.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/ลอย17.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-plus-icon">
+                                <a href="img/ลอย17.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Gallery End -->
+
+
+
+
+
+       
